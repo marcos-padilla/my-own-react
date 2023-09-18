@@ -1,11 +1,10 @@
-type VNode = VElement | VText
-type VNodeList = VNode[]
+export type VNode = VElement | VText
+export type VNodeList = VNode[]
 
-type VElement = {
+export type VElement = {
 	tag: string
-	props: {
-		children: VNodeList
-	}
+	className?: string
+	dom: HTMLElement | null
 }
 
-type VText = string | number
+export type VText = string | number
