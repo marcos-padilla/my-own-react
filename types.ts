@@ -7,8 +7,13 @@ export type VElement = {
 		children?: VNodeList
 	}
 	className?: string
-	style?: string
+	style?: Record<string, string>
 	dom: HTMLElement | null
 }
 
 export type VText = string | number
+
+export type VElementConfig = {
+	className?: string
+	style?: Record<string, string>
+}
